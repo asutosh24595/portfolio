@@ -43,7 +43,7 @@ const AnimatedText = () => {
   }, [displayedText, isErasing, currentWord]);
 
   return (
-    <span className="text-4xl font-bold mr-2">
+    <span className="md:text-4xl text-xl font-bold mr-2">
       I am a <animated.span><p className="inline text-sky-900">{displayedText}</p></animated.span>
     </span>
   );

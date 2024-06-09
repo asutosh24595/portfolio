@@ -33,12 +33,24 @@ export default function About() {
       animate="visible"
       variants={containerVariants}
     >
-      <div className="flex justify-between mt-2">
+      <div className="lgl:flex justify-between md:mt-2">
         <motion.div
-          className="max-w-lg max-h-screen h-full top-36 left-20 relative"
+          className="lgl:hidden mt-24 mx-12"
+          initial={{ scale: 0 }}
+          animate={{ scale: 1 }}
+          transition={{ delay: 1.2, duration: 0.5 }}
+        >
+          <img
+            className="border-2 border-gray-400 rounded-full md:h-80 md:w-80 h-60 w-60 shadow-lg"
+            src={profileImg}
+            alt="Profile"
+          />
+        </motion.div>
+        <motion.div
+          className="max-w-lg max-h-screen h-full lgl:top-36 md:left-20 top-20 left-2 relative"
           variants={itemVariants}
         >
-          <div className="text-5xl mb-2 text-slate-300">
+          <div className="lgl:text-5xl text-xl mb-2 text-slate-300 lgl:flex lgl:flex-col flex gap-2">
             <motion.h1
               className="mb-2"
               initial={{ opacity: 0, y: -20 }}
@@ -66,12 +78,12 @@ export default function About() {
             </motion.h2>
           </div>
           <motion.div
-            className="mt-4 flex items-center justify-end"
+            className="mt-4 md:flex items-center justify-end px-1.5"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 1, duration: 0.5 }}
           >
-            <span className="max-w-lg text-xl text-slate-500">
+            <span className="md:text-xl text-base text-slate-400">
               I am a passionate and versatile person, always on the lookout for
               chances to enhance my abilities and embrace new challenges. Driven
               by an insatiable thirst for knowledge, I am dedicated to achieving
@@ -82,7 +94,7 @@ export default function About() {
           </motion.div>
         </motion.div>
         <motion.div
-          className="my-40 mx-12"
+          className="hidden lgl:block my-40 mx-12"
           initial={{ scale: 0 }}
           animate={{ scale: 1 }}
           transition={{ delay: 1.2, duration: 0.5 }}
@@ -95,7 +107,7 @@ export default function About() {
         </motion.div>
       </div>
       <motion.div
-        className="mx-20"
+        className="md:mx-20 my-36 lgl:my-20 mx-4"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.5, duration: 0.5 }}
