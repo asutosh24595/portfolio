@@ -17,7 +17,7 @@ export default function Menu() {
 
   const DrawerList = (
     <Box
-      sx={{ width: 450, color: "white" }}
+      sx={{color: "white"}}
       role="presentation"
       onClick={toggleDrawer(false)}
     >
@@ -54,7 +54,8 @@ export default function Menu() {
           "& .MuiPaper-root": {
             backgroundColor: "transparent",
             height: 160,
-            mt: 5,
+            width: "100%",
+            mt: 6.5,
           },
         }}
         open={open}

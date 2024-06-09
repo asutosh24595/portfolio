@@ -5,7 +5,7 @@ import Skills from "./components/Skills";
 export default function App() {
   return (
     <div
-      className="bg-contain bg-center bg-custom-bg">
+      className="bg-center bg-custom-bg bg-contain">
       <main className="flex flex-col">
         <Navbar />
         <div className="font-serif" id="about">

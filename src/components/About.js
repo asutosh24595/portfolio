@@ -33,9 +33,9 @@ export default function About() {
       animate="visible"
       variants={containerVariants}
     >
-      <div className="lgl:flex justify-between md:mt-2">
+      <div className="lgl:flex justify-center items-center md:mt-2 xl:gap-40">
         <motion.div
-          className="lgl:hidden mt-24 mx-12"
+          className="lgl:hidden mt-10 mx-12"
           initial={{ scale: 0 }}
           animate={{ scale: 1 }}
           transition={{ delay: 1.2, duration: 0.5 }}
@@ -47,7 +47,7 @@ export default function About() {
           />
         </motion.div>
         <motion.div
-          className="max-w-lg max-h-screen h-full lgl:top-36 md:left-20 top-20 left-2 relative"
+          className="max-w-lg max-h-screen h-full mt-2 ml-2"
           variants={itemVariants}
         >
           <div className="lgl:text-5xl text-xl mb-2 text-slate-300 lgl:flex lgl:flex-col flex gap-2">
@@ -64,7 +64,7 @@ export default function About() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7 }}
             >
-              Asutosh Shukla
+              Asutosh Shukla.
             </motion.h1>
           </div>
           <div className="text-slate-300">
@@ -107,7 +107,7 @@ export default function About() {
         </motion.div>
       </div>
       <motion.div
-        className="md:mx-20 my-36 lgl:my-20 mx-4"
+        className="lg:mx-24 my-36 lgl:my-20 mx-4"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.5, duration: 0.5 }}
